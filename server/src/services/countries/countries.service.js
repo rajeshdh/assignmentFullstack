@@ -5,8 +5,8 @@ module.exports = function() {
   const app = this;
   const mongoClient = app.get('mongoClient');
 
-  const apartmentService = createService({});
-  app.use('/countries', apartmentService);
+  const countryService = createService({});
+  app.use('/countries', countryService);
 
   const service = app.service('countries');
 
