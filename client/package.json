@@ -12,6 +12,7 @@
     "graphql-tag": "^2.9.2",
     "react": "^16.4.1",
     "react-apollo": "^2.1.6",
+    "react-autocomplete": "^1.8.1",
     "react-dom": "^16.4.1",
     "react-octicon": "^3.0.1",
     "react-redux": "^5.0.7",
