@@ -6,6 +6,7 @@ import HomeView from './views/HomeView';
 import client from './ApolloClient';
 import store from './store';
 import ApartmentView from "./views/ApartmentView";
+import LocationView from "./views/LocationView";
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={HomeView}/>
               <Route exact path="/apartments/:apartmentId" component={ApartmentView}/>
+              <Route exact path="/locations" component={LocationView} />
             </Switch>
           </Router>
         </Provider>

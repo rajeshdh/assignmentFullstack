@@ -32,3 +32,31 @@ export const fetchApartmentsList = () => dispatch => {
 };
 
 
+export const fetchApartmentsListByLocation = (location) => dispatch => {
+  client.query({
+    query: gql`
+    {
+      apartments(active: true, location: "${location}") {
+        items {
+          _id
+          owner {
+          _id
+            email
+          } 
+          title
+          location {
+            title
+          }
+          size
+          price
+          amenities
+          images
+        }
+      }
+    }`
+  })
+    .then(apartments => dispatch({
+      type: FETCH_APARTMENTS_LIST,
+      payload: apartments.data
+    }));
+};
