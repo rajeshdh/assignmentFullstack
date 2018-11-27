@@ -13,10 +13,10 @@ class App extends Component {
       <ApolloProvider client={client}>
         <Provider store={store}>
           <Router>
-            <div>
+            <Switch>
               <Route exact path="/" component={HomeView}/>
               <Route exact path="/apartments/:apartmentId" component={ApartmentView}/>
-            </div>
+            </Switch>
           </Router>
         </Provider>
       </ApolloProvider>
