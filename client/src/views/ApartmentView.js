@@ -47,6 +47,11 @@ export class ApartmentView extends React.Component {
                         <ApartmentAmentityView apartment={apartment} limit="20" />
                       </div>
                     </div>
+                    <div className="_17om8IEGFeu2W2TBOJ6xQs Lsdn2hC-tehVod76x4HzK text-truncate">
+                      <span>Owner - {apartment.owner.profile.firstName}{' '}
+                          {apartment.owner.profile.lastName}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>

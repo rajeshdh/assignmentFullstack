@@ -27,6 +27,12 @@ export const fetchApartment = (_id) => dispatch => {
           bathrooms
         } 
         services 
+        owner {
+          profile {
+            firstName
+            lastName
+          }
+        }
       }
     }`
 })
